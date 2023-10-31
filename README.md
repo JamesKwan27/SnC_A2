@@ -19,16 +19,13 @@ Contribution:
 The following path directories include the files that we changed.
 
 [Customised Environment](https://github.com/JamesKwan27/SnC_A2/blob/main/fetch_gazebo/fetch_gazebo/worlds/test_zone.sdf)
-
-Spawning the objects and tables at the desired positions.
+ - Spawned the objects and tables at the desired positions.
 
 [Object models - cube, cylinder, sphere](https://github.com/JamesKwan27/SnC_A2/tree/main/fetch_gazebo/fetch_gazebo/models)
-
-Added our own models of a cube, cylinder, and sphere.
+ - Added our own models of a cube, cylinder, and sphere.
 
 [Demo code](https://github.com/JamesKwan27/SnC_A2/blob/main/fetch_gazebo/fetch_gazebo_demo/scripts/demo.py)
-
-The main code that controls the fetch robot movements.
+ - The main code that controls the fetch robot movements.
 
 ## 1) Project Description: ##
 Control the Fetch robot to grasp the object on the table, e.g. can of coke, box of cookies, using the robotic arm and hand by
