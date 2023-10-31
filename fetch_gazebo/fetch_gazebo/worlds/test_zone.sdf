@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://test_zone</uri>
+    </include>
+<!-- Insert Table-->
+    <include>
+      <uri>model://cafe_table</uri>
+      <name>table1</name>
+      <pose>2 0 0 0 0 1.57</pose>
+    </include>
+<!-- Insert ONE OBJECT AT A TIME FOR PICKUP -->
+    <include>
+
+<!-- CHANGE MODEL NAME TO EITHER "red_cube", "red_cylinder", "red_sphere" -->
+      <uri>model://red_cube</uri>
+      <pose>1.75 0.25 0.83 0 0 0</pose>
+    </include>
+
+
+  </world>
+</sdf>
