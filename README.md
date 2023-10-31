@@ -82,15 +82,14 @@ Add the /head_camera/depth_downsample/image_raw/Image to your rviz.
 #### 3.7) Starting the simulation
 `roslaunch fetch_gazebo_demo demo.launch`
 
-### IMPORTANT
+### IMPORTANT: Dealing with errors
 #### If the demo fails to detect the object due to the fetch robot facing a random side:
 Stop the demo using `Ctrl+C` in the terminal where the demo.launch was launched.
 
-Rerun the demo in 3.7):
-`roslaunch fetch_gazebo_demo demo.launch`
+Rerun the demo using 3.7):
 
 #### If the arm is extended and fails to grasp the object
-Restart all terminals and redo 3.5) Open the environment, 3.6) Viewing from the head_camera, and 3.7) Starting the simulation.
+Restart all processes within the terminal and redo 3.5) Open the environment, 3.6) Viewing from the head_camera, and 3.7) Starting the simulation.
 
 ## 4) Changing the Object Model: ##
 Stop the gazebo and rviz simulations using `Ctrl+C` within the repsective terminals.
