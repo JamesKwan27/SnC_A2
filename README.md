@@ -11,9 +11,9 @@ Group Members:
 Subject coordinator: Dr. Liang Zhao
 
 Contribution: 
- - James Kwan -
- - Sagar Rathi -
- - Aiden Sing - 
+ - James Kwan - 30%
+ - Sagar Rathi - 30%
+ - Aiden Sing - 40%
 
 ## 1) Project Description: ##
 Control the Fetch robot to grasp the object on the table, e.g. can of coke, box of cookies, using the robotic arm and hand by
