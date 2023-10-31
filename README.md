@@ -88,5 +88,5 @@ Navigate to and open `~/catkin_ws/src/fetch_gazebo/fetch_gazebo/worlds/test_zone
 Edit the object spawned within the environment by replacing `<uri>model://red_cube</uri>` to either:
 
 1) `<uri>model://red_cube</uri>`
-2) `<uri>model://red_cuylinder</uri>`
+2) `<uri>model://red_cylinder</uri>`
 3) `<uri>model://red_sphere</uri>`
