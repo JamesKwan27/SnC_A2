@@ -13,7 +13,7 @@ Subject coordinator: Dr. Liang Zhao
 Contribution: 
  - James Kwan - 30%
  - Sagar Rathi - 30%
- - Aiden Sing - 40%
+ - Aidan Sing - 40%
 
 ## 1) Project Description: ##
 Control the Fetch robot to grasp the object on the table, e.g. can of coke, box of cookies, using the robotic arm and hand by
@@ -82,8 +82,11 @@ Wait for the playground.launch to finish initialising before moving on.
 
 ## 4) Changing the Object Model: ##
 Stop the gazebo and rviz simulations using `Ctrl+C` within the repsective terminals.
+
 Navigate to and open `~/catkin_ws/src/fetch_gazebo/fetch_gazebo/worlds/test_zone.sdf`
-Edit the object spawned within the environment by replacing `<uri>model://red_cube</uri>` to either
+
+Edit the object spawned within the environment by replacing `<uri>model://red_cube</uri>` to either:
+
 1) `<uri>model://red_cube</uri>`
 2) `<uri>model://red_cuylinder</uri>`
 3) `<uri>model://red_sphere</uri>`
