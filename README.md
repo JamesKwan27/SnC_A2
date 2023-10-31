@@ -34,13 +34,13 @@ A summary of the commands is showed below:
 
 3) `sudo apt-get update`
 
-4) `sudo apt-get install ros-indigo-desktop-full`
+4) `sudo apt-get install ros-melodic-desktop-full`
 
 5) `sudo rosdep init`
 
 6) `rosdep update`
 
-7) `echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc`
+7) `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
 
 8) `source ~/.bashrc`
 
