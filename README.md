@@ -20,6 +20,7 @@ The following path directories include the files that we changed.
 
 [Customised Environment](https://github.com/JamesKwan27/SnC_A2/blob/main/fetch_gazebo/fetch_gazebo/worlds/test_zone.sdf)
  - Spawned the objects and tables at the desired positions.
+ - This file is used to change the object spawned on the table.
 
 [Object models - cube, cylinder, sphere](https://github.com/JamesKwan27/SnC_A2/tree/main/fetch_gazebo/fetch_gazebo/models)
  - Added our own models of a cube, cylinder, and sphere.
