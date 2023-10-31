@@ -4,9 +4,9 @@ University of Technology Sydney, Australia.
 Assignment for 41014 Sensors and Control for Mechatronic Systems subject, Spring 2023 session
 
 Group Members:
- - James Kwan   
- - Sagar Rathi  
- - Aidan Sing    
+ - James Kwan 13204490  
+ - Sagar Rathi 13908722
+ - Aidan Sing  14248696  
  
 Subject coordinator: Dr. Liang Zhao
 
