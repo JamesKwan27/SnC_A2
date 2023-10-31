@@ -4,11 +4,16 @@ University of Technology Sydney, Australia.
 Assignment for 41014 Sensors and Control for Mechatronic Systems subject, Spring 2023 session
 
 Group Members:
- - James Kwan   Contribution: 
- - Sagar Rathi  Contribution:
- - Aidan Sing   Contribution: 
+ - James Kwan   
+ - Sagar Rathi  
+ - Aidan Sing    
  
 Subject coordinator: Dr. Liang Zhao
+
+Contribution: 
+ - James Kwan -
+ - Sagar Rathi -
+ - Aiden Sing - 
 
 ## 1) Project Description: ##
 Control the Fetch robot to grasp the object on the table, e.g. can of coke, box of cookies, using the robotic arm and hand by
