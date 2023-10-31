@@ -22,16 +22,16 @@ Target: The Fetch robot grasps different interested objects on the table without
 
 The following proceures assume you have Ubuntu 18.04 LTS installed on your machine. Download it from the [releases page](http://releases.ubuntu.com/).
  
-### 2.1) ROS Melodic 
+### 2.1) ROS Melodic Installtion 
 
 We will be using ROS Melodic on Ubuntu 18.04 LTS (Bionic Beaver). Follow the instructions at the [ROS Melodic installation instructions page.](https://wiki.ros.org/melodic/Installation/Ubuntu)
 
 A summary of the commands is showed below:
 
-1) sudo apt install ros-melodic-fetch-calibration ros-melodic-fetch-open-auto-dock \
-ros-melodic-fetch-navigation ros-melodic-fetch-tools -y
+1) `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list`
 
-2) `sudo apt-get update`
+2) `sudo apt install curl # if you haven't already installed curl
+    curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -3) `sudo apt-get update``
 
 3) `sudo apt-get install ros-melodic-desktop-full`
 
@@ -48,23 +48,19 @@ ros-melodic-fetch-navigation ros-melodic-fetch-tools -y
 [Official documentation page](https://docs.fetchrobotics.com/).
 
 #### 3.1) Install Gazebo simulator Demo
-`sudo apt-get install ros-melodic-fetch-gazebo-demo`
+`sudo apt install ros-melodic-fetch-calibration ros-melodic-fetch-open-auto-dock \
+ ros-melodic-fetch-navigation ros-melodic-fetch-tools -y`
 
 #### 3.2) Install the main package from Fetch Robotics GitHub page
 
-Go to your ROS workspace, and do the following commands  (considering it is called `~/ros_ws`): 
+Go to your ROS workspace, and do the following commands  (considering it is called `~/catkin_ws`): 
 
-0) `cd ~/ros_ws/src/`
-1) `git clone https://github.com/fetchrobotics/fetch_ros`
-
-Make sure you're on the right branch:
-
-2) `cd fetch_ros`
-3) `git checkout melodic-devel`
+0) `cd ~/catkin_ws/src/`
+1) `git clone https://github.com/fetchrobotics/fetch_gazebo.git`
 
 Now go back to the workspace and compile it:
 
-2) `cd ~/ros_ws`
+2) `cd ~/catkin_ws`
 3) `catkin_make`
 4) `source devel/setup.bash`
 
@@ -79,20 +75,3 @@ It may take a while to initiate the gazebo when opening it for the first time, a
 #### 3.7) Start rviz and add the depth/image/baselaser to your rviz.
 `rviz`
 
-### Issues
-
-If you have any issues when compiling, go to `ros_ws` and do:
-`rosdep install --from-paths src -r -y`
-
-This will install the dependencies of all packages in the workspace. Extracted from http://wiki.ros.org/rosdep.
-
-### Tips
-1) Always run `source ros_ws/devel/setup.bash` before running a launch file, it might help.
-
-
-
-
-### Tutorials that might help
-http://wiki.ros.org/pr2_controllers/Tutorials
-http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_python_interface/move_group_python_interface_tutorial.html
-http://docs.ros.org/indigo/api/pr2_moveit_tutorials/html/planning/scripts/doc/move_group_python_interface_tutorial.html
