@@ -71,14 +71,19 @@ Now go back to the workspace and compile it:
 3) `catkin_make`
 4) `source devel/setup.bash`
 
-#### 3.4) Launch the simulator
-`roslaunch fetch_gazebo simulation.launch`
-
 It may take a while to initiate the gazebo when opening it for the first time, as it downloads the model from internet.
 #### 3.5) Check the data
 `roslaunch fetch_gazebo playground.launch`
+Wait for the playground.launch to finish initialising before moving on.
 #### 3.6) Open another terminal
 `roslaunch fetch_gazebo_demo demo.launch`
-#### 3.7) Start rviz and add the depth/image/baselaser to your rviz.
+#### 3.7) Start rviz and add the /head_camera/depth_downsample/image_raw/Image to your rviz.
 `rviz`
 
+## 4) Changing the Object Model: ##
+Stop the gazebo and rviz simulations using `Ctrl+C` within the repsective terminals.
+Navigate to and open `~/catkin_ws/src/fetch_gazebo/fetch_gazebo/worlds/test_zone.sdf`
+Edit the object spawned within the environment by replacing `<uri>model://red_cube</uri>` to either
+1) `<uri>model://red_cube</uri>`
+2) `<uri>model://red_cuylinder</uri>`
+3) `<uri>model://red_sphere</uri>`
