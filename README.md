@@ -28,21 +28,20 @@ We will be using ROS Melodic on Ubuntu 18.04 LTS (Bionic Beaver). Follow the ins
 
 A summary of the commands is showed below:
 
-1) `sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'`
+1) sudo apt install ros-melodic-fetch-calibration ros-melodic-fetch-open-auto-dock \
+ros-melodic-fetch-navigation ros-melodic-fetch-tools -y
 
-2) `sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116`
+2) `sudo apt-get update`
 
-3) `sudo apt-get update`
+3) `sudo apt-get install ros-melodic-desktop-full`
 
-4) `sudo apt-get install ros-melodic-desktop-full`
+4) `sudo rosdep init`
 
-5) `sudo rosdep init`
+5) `rosdep update`
 
-6) `rosdep update`
+6) `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
 
-7) `echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc`
-
-8) `source ~/.bashrc`
+7) `source ~/.bashrc`
 
 ### 3) Fetch Robot
 
