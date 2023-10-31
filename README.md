@@ -72,13 +72,25 @@ Now go back to the workspace and compile it:
 4) `source devel/setup.bash`
 
 It may take a while to initiate the gazebo when opening it for the first time, as it downloads the model from internet.
-#### 3.5) Check the data
+#### 3.5) Open the environment
 `roslaunch fetch_gazebo playground.launch`
 Wait for the playground.launch to finish initialising before moving on.
-#### 3.6) Open another terminal
-`roslaunch fetch_gazebo_demo demo.launch`
-#### 3.7) Start rviz and add the /head_camera/depth_downsample/image_raw/Image to your rviz.
+#### 3.6) Viewing from the head_camera
 `rviz`
+Change the fixed frame to `base_link`
+Add the /head_camera/depth_downsample/image_raw/Image to your rviz.
+#### 3.7) Starting the simulation
+`roslaunch fetch_gazebo_demo demo.launch`
+
+### IMPORTANT
+#### If the demo fails to detect the object due to the fetch robot facing a random side:
+Stop the demo using `Ctrl+C` in the terminal where the demo.launch was launched.
+
+Rerun the demo in 3.7):
+`roslaunch fetch_gazebo_demo demo.launch`
+
+#### If the arm is extended and fails to grasp the object
+Restart all terminals and redo 3.5) Open the environment, 3.6) Viewing from the head_camera, and 3.7) Starting the simulation.
 
 ## 4) Changing the Object Model: ##
 Stop the gazebo and rviz simulations using `Ctrl+C` within the repsective terminals.
